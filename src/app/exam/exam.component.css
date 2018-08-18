@@ -1,0 +1,26 @@
+.form-q{
+    background-color: gray;
+    color: gold;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.form-question{
+    background-color: #b3aeae;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.option-span{
+    margin: 2px;
+    /* border: 1px solid black; */
+    padding: 10px;
+    background-color: #b3aeae;
+}
+.option-div{
+    width: 94%;
+    padding: 20px;
+    background-color: red;
+}

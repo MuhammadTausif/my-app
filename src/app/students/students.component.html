@@ -1,0 +1,24 @@
+<h2> Students  </h2>
+<a routerLink="/create-student" routerLinkActive="active">Create New Student</a>
+<ul class="students">
+  <table>
+    <tr>
+      <th>Class/Roll No</th>
+      <th>Name</th>
+      <th>Father Name</th>
+      <th>Action</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let student of students">
+      <td> {{student.StudentClass}} / {{student.StudentRollNo}} </td>
+      <td> {{student.StudentName}} </td>
+      <td> {{student.StudentFatherName}} </td>
+      <td>
+        <button>Edit</button>
+      </td>
+      <td>
+        <button>Delete</button>
+      </td>
+    </tr>
+  </table>
+</ul>

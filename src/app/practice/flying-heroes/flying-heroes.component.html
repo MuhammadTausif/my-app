@@ -1,0 +1,14 @@
+<h2>Flying Heroes no pipe</h2>
+New hero:
+  <input type="text" #box
+          (keyup.enter)="addHero(box.value); box.value=''"
+          placeholder="hero name">
+  <button (click)="reset()">Reset</button>
+  <div *ngFor="let hero of heroes">
+    {{hero.name}}
+  </div>
+
+<h2>Flying Heroes Pipe</h2>
+<div *ngFor="let hero of (heroes | flyingHeroes)">
+  {{hero.name}}
+</div>
